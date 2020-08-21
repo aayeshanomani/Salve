@@ -17,10 +17,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final serverText = TextEditingController();
-  final roomText = TextEditingController(text: "plugintestroom");
-  final subjectText = TextEditingController(text: "My Plugin Test Meeting");
-  final nameText = TextEditingController(text: "Plugin Test User");
-  final emailText = TextEditingController(text: "fake@email.com");
+  final roomText = TextEditingController(text: "Room ID");
+  final subjectText = TextEditingController(text: "Meeting title");
+  final nameText = TextEditingController(text: "Enter name");
+  final emailText = TextEditingController(text: "Enter email");
   final iosAppBarRGBAColor = TextEditingController(text: "#0080FF80");//transparent blue
   var isAudioOnly = true;
   var isAudioMuted = true;
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: "Server URL",
-                      hintText: "Hint: Leave empty for meet.jitsi.si"),
+                      hintText: "Hint: Leave empty for Our Application"),
                 ),
                 SizedBox(
                   height: 16.0,
